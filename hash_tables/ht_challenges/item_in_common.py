@@ -22,8 +22,9 @@ def item_in_common(list1, list2):
 
     for item in list2:
         if item in items:
-            return False
-        items[item] = True
+            return True
+
+    return False
 
 
 print(item_in_common(list1, list2))
